@@ -147,7 +147,7 @@ const categories = [
         { label: 'Management Fee', value: '2% of the capital commitment every year during the Investment Period\n2% of the remaining AUM every year during the Exit/Optional Extension Period' },
         { label: 'Carried Interest', value: '25% deal-based payout under American Waterfall with Clawback Provision' },
         { label: 'Minimum Check', value: '$1M USD for LP; $20M USD for LPAC (Limited Partnership Advisory Committee)' },
-        { label: 'Capital Call Schedule', value: '40% wired 2026/01/01-01/15\n30% wired 2027/01/01-01/15\n30% wired 2028/01/01-01/15' },
+        { label: 'Capital Call Schedule', value: '40% capital commitment wired in during 2026/01/01 - 2026/01/15\n30% capital commitment wired in during 2027/01/01 - 2027/01/15\n30% capital commitment wired in during 2028/01/01 - 2028/01/15' },
       ],
     },
   },
