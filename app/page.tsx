@@ -425,7 +425,7 @@ export default function Home() {
       {/* Hero Title */}
       <div className="flex flex-col items-center justify-center py-24 px-6">
         <Image
-          src="/images/logo.png"
+          src="/outliers-deck/images/logo.png"
           alt="Outliers"
           width={200}
           height={60}
