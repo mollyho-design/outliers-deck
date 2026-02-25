@@ -52,7 +52,7 @@ const categories = [
         },
         {
           title: 'Historical Outcomes and Growth Forecast',
-          text: 'Our analysis covering 1,552 U.S.-based space companies founded between 2000 to 2025 reveals: 9 companies achieved >10,000x valuation growth multiples, 23 between 1,000-10,000x, and 59 between 100-1,000x. A theoretical $1M investment in each company\'s first round would yield 40x returns (16% IRR) over a 25-year period.',
+          text: 'Our analysis covering 1,552 U.S.-based space companies founded between 2000 to 2025 reveals:\n\nOf the 53% of companies that survived, 9 companies achieved >10,000x valuation growth multiples, 23 between 1,000-10,000x, and 59 between 100-1,000x.\n\nMore critically, we found 50 major liquidation events (IPO/M&A), generating material DPI. 50 is a conservative floor given undisclosed private M&As. A theoretical $1M investment in each company\'s first round would yield 40x returns (16% IRR) over a 25-year period.\n\nWe project 1,500-3,000 new U.S. space companies by 2030, though annual formation rates will moderate from 95% growth (2026) to 75% (2030) as the market consolidates around proven business models and capital concentrates in winners.',
         },
         {
           title: 'Digital Infrastructure Stacks',
@@ -271,7 +271,7 @@ export default function Home() {
                           </div>
                         ) : (
                           <div className="space-y-4">
-                            <p className="text-white/70 leading-relaxed">{section.text}</p>
+                            <p className="text-white/70 leading-relaxed whitespace-pre-line">{section.text}</p>
                             {section.image && (
                               <div className="relative w-full aspect-[16/9] rounded-lg overflow-hidden">
                                 <Image
