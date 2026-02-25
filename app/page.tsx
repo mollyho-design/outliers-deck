@@ -144,7 +144,7 @@ const categories = [
         { label: 'Fund Size', value: '$300M USD (GP commitment capital being at least $10M USD): minimum 5% of all LPs\' total capital contributions' },
         { label: 'Investment Stage', value: 'Pre-Seed to Series A round' },
         { label: 'Fund Life', value: '5 Years Investment Period (2026-2030)\n5 Years Exit Period (2031-2035)\n1+1 Years Optional Extension (2036-2037)' },
-        { label: 'Management Fee', value: '2% of capital commitment during Investment Period\n2% of remaining AUM during Exit/Extension Period' },
+        { label: 'Management Fee', value: '2% of the capital commitment every year during the Investment Period\n2% of the remaining AUM every year during the Exit/Optional Extension Period' },
         { label: 'Carried Interest', value: '25% deal-based payout under American Waterfall with Clawback Provision' },
         { label: 'Minimum Check', value: '$1M USD for LP; $20M USD for LPAC' },
         { label: 'Capital Call Schedule', value: '40% wired 2026/01/01-01/15\n30% wired 2027/01/01-01/15\n30% wired 2028/01/01-01/15' },
