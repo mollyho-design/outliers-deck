@@ -193,7 +193,7 @@ export default function Home() {
               </span>
               <p className="text-black/80 text-base leading-snug h-20 mb-6">{item.title}</p>
               {item.image && (
-                <div className="relative w-full aspect-square rounded-lg overflow-hidden">
+                <div className="relative w-full aspect-square overflow-hidden">
                   <Image
                     src={item.image}
                     alt={item.title}
