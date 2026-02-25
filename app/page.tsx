@@ -14,17 +14,17 @@ const categories = [
         {
           number: '01',
           title: 'Space is the backbone for Earth\'s digital infrastructure',
-          image: '/images/img_1.jpg',
+          image: '/outliers-deck/images/img_1.jpg',
         },
         {
           number: '02',
           title: 'Space is the boundary for cutting-edge deep technology, demonstrating lots of technology transfers',
-          image: '/images/img_2.jpg',
+          image: '/outliers-deck/images/img_2.jpg',
         },
         {
           number: '03',
           title: 'Space ushers in the next generation of abundance',
-          image: '/images/img_3.jpg',
+          image: '/outliers-deck/images/img_3.jpg',
         },
       ],
     },
@@ -37,7 +37,7 @@ const categories = [
       sections: [
         {
           title: 'Market Overview',
-          image: '/images/figure_19_v1.png',
+          image: '/outliers-deck/images/figure_19_v1.png',
           points: [
             { label: 'Historical Outcomes and Growth', text: 'We project robust overall growth outlook in the space sector and predict that the emerging space market is at a takeoff point.' },
             { label: 'Digital Infrastructure', text: 'Our current digital infrastructure is increasingly reliant on space-based technologies.' },
@@ -425,7 +425,7 @@ export default function Home() {
       {/* Hero Title */}
       <div className="flex flex-col items-center justify-center py-24 px-6">
         <Image
-          src="/images/logo.png"
+          src="/outliers-deck/images/logo.png"
           alt="Outliers"
           width={200}
           height={60}
