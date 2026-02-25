@@ -178,11 +178,11 @@ export default function Home() {
     return cat.title.toLowerCase().includes(q) || searchInContent(cat.content, q)
   })
 
-  const renderContent = (content: typeof categories[0]['content'], categoryId?: string) => {
-    if (content.type === 'thesis') {
+  const renderContent = (content: any, categoryId?: string) => {
+    if (content.type === 'thesis' && content.items) {
       return (
         <div className="grid md:grid-cols-3 gap-8">
-          {content.items.map((item) => (
+          {content.items.map((item: any) => (
             <div key={item.number} className="flex flex-col">
               <span
                 className="text-3xl text-black mb-3"
@@ -207,10 +207,10 @@ export default function Home() {
       )
     }
 
-    if (content.type === 'market') {
+    if (content.type === 'market' && content.sections) {
       return (
         <div className="space-y-3">
-          {content.sections.map((section, idx) => {
+          {content.sections.map((section: any, idx: number) => {
             const subId = `market-${idx}`
             return (
               <div key={idx} className="border border-white/10 rounded-lg overflow-hidden">
@@ -256,7 +256,7 @@ export default function Home() {
                             )}
                             <div className={section.image ? 'md:w-2/3' : ''}>
                               <ul className="space-y-3">
-                                {section.points.map((point, pidx) => (
+                                {section.points.map((point: any, pidx: number) => (
                                   <li key={pidx} className="flex gap-3">
                                     <span className="text-[#9DCA53]">•</span>
                                     <div>
@@ -294,10 +294,10 @@ export default function Home() {
       )
     }
 
-    if (content.type === 'strategy') {
+    if (content.type === 'strategy' && content.sections) {
       return (
         <div className="space-y-3">
-          {content.sections.map((section, idx) => {
+          {content.sections.map((section: any, idx: number) => {
             const subId = `strategy-${idx}`
             return (
               <div key={idx} className="border border-white/10 rounded-lg overflow-hidden">
@@ -330,7 +330,7 @@ export default function Home() {
                         <p className="text-white/70 leading-relaxed">{section.text}</p>
                         {section.partnerships && (
                           <ul className="space-y-2 mt-4">
-                            {section.partnerships.map((p, pidx) => (
+                            {section.partnerships.map((p: any, pidx: number) => (
                               <li key={pidx} className="flex gap-3 text-white/60">
                                 <span className="text-[#9DCA53]">•</span>
                                 {p}
@@ -340,7 +340,7 @@ export default function Home() {
                         )}
                         {section.points && (
                           <ul className="space-y-3 mt-4">
-                            {section.points.map((point, pidx) => (
+                            {section.points.map((point: any, pidx: number) => (
                               <li key={pidx} className="flex gap-3">
                                 <span className="text-[#9DCA53]">•</span>
                                 <div>
@@ -372,15 +372,15 @@ export default function Home() {
       )
     }
 
-    if (content.type === 'portfolios') {
+    if (content.type === 'portfolios' && content.companies) {
       return (
         <div className="space-y-10">
-          {content.companies.map((company) => (
+          {content.companies.map((company: any) => (
             <div key={company.name} className="space-y-4">
               <h3 className="text-2xl font-bold text-white">{company.name}</h3>
               <p className="text-white/70 leading-relaxed">{company.description}</p>
               <ul className="space-y-3">
-                {company.highlights.map((h, idx) => (
+                {company.highlights.map((h: any, idx: number) => (
                   <li key={idx} className="flex gap-3">
                     <span className="text-[#5DC0D9]">•</span>
                     <div>
@@ -404,10 +404,10 @@ export default function Home() {
       )
     }
 
-    if (content.type === 'terms') {
+    if (content.type === 'terms' && content.terms) {
       return (
         <div className="space-y-6">
-          {content.terms.map((term, idx) => (
+          {content.terms.map((term: any, idx: number) => (
             <div key={idx} className="grid md:grid-cols-[200px_1fr] gap-4 border-b border-white/10 pb-4">
               <span className="font-medium text-[#9DCA53]">{term.label}</span>
               <span className="text-white/80 whitespace-pre-line">{term.value}</span>
