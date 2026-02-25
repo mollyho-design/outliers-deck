@@ -97,7 +97,7 @@ const categories = [
           link: 'https://model.outliers.fund/ecosystem-map/',
         },
         {
-          title: 'Track Records',
+          title: 'Outliers Team',
           points: [
             { label: 'Fund History', text: 'Outliers Fund was founded by research scientists, venture builders and investors from MIT in 2016. Outliers Blockchain Fund I / II have returned over 16x / 11x respectively.' },
             { label: 'Team', text: 'We are an experienced and complementary team of early investors of 20+ unicorns and scientists and engineers of flagship space missions.' },
