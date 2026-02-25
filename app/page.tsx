@@ -190,7 +190,7 @@ export default function Home() {
               >
                 {item.number}
               </span>
-              <p className="text-black/80 text-base h-24">{item.title}</p>
+              <p className="text-black/80 text-base leading-snug h-20 mb-6">{item.title}</p>
               {item.image && (
                 <div className="relative w-full aspect-square rounded-lg overflow-hidden">
                   <Image
