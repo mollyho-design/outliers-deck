@@ -48,6 +48,7 @@ const categories = [
         {
           title: 'New Economics of Space Launch',
           text: 'Launch costs have dropped by 300x in the last 45 years; 100x in the last 20 years (mostly contributed by SpaceX). Starship is projected to reduce costs to ~$50-200/kg to LEO.',
+          image: '/outliers-deck/images/economics_chart.jpg',
         },
         {
           title: 'Historical Outcomes and Growth Forecast',
